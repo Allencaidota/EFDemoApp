@@ -1,0 +1,15 @@
+[
+  {
+    "FirstName": "Strickland",
+    "LastName": "Boone",
+    "Age": 33,
+    "Addresses": [
+      {
+        "StreetAddress": "Grattan Street",
+        "City": "Martinsville",
+        "State": "South Dakota",
+        "ZipCode": "15740-0000"
+      }
+    ]
+  }
+]
