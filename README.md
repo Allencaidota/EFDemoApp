@@ -13,6 +13,7 @@ Get the data we can use var people = _db.people base on dependency injection
 two simple things we need to be careful:
   when we using LINQ EF will create the data whatever it has by multible time 
   for example:  
+          //...
             var people = _db.people
                 .Include(a => a.Addresses)
                 .Include(e => e.EmaildAddresses)
@@ -27,7 +28,7 @@ two simple things we need to be careful:
  second problem:
  don't use method in your LINQ even if this is working for CSharp
  for example:
- 
+ //....
  public void OnGet()
         {
             LoadSampleData();
