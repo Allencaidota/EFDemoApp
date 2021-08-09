@@ -22,15 +22,25 @@ namespace EFDemoWeb.Pages
             _logger = logger;
             _db = db;
         }
-
+        //get all people's address and email
+        //excute problem
         public void OnGet()
         {
             LoadSampleData();
             var people = _db.people
-                .Include(a => a.Addresses)
-                .Include(e => e.EmaildAddresses)
+                //.Include(a => a.Addresses)
+                //.Include(e => e.EmaildAddresses)
+
+                //problem line that would download all users
+                //.Where(x=>ApprovedAge(x.Age))
+                .Where(x=> x.Age>= 18 && x.Age < 65)
                 .ToList();
 
+        }
+
+        private bool ApprovedAge(int age)
+        {
+            return (age >= 18 && age < 65);
         }
 
         private void LoadSampleData()
