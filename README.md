@@ -1,6 +1,10 @@
 # EFDemoApp
 This is a study project for EFCore Data Access
 
+Finished study by 8/10/2021
+Title: Entity Framework Best Practices - Should EFCore Be Your Data Access of Choice?
+resource : https://www.youtube.com/watch?v=qkJ9keBmQWo&t=7890s
+
 8/4/2021
 1. viewing the Snapshot we notice that city, state, etc are using nvarchar(max).
 it is beacuse those string cloud be very long, but there is problem nvarchar could make your project run slow when there is alot data.
