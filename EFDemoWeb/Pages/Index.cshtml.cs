@@ -10,6 +10,16 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 
+//Benefits of Entity Framework Core
+//1. Faster development speed, but it might slow in production if you dont use it effectively
+//2. you don't have t oknow SQL, but its bad to use ef without knowing SQL
+
+//Benefits of Dapper
+//1. Faster in production
+//2. Easier to work with SQL developer
+//3. Designed for loose coupling
+
+
 namespace EFDemoWeb.Pages
 {
     public class IndexModel : PageModel
